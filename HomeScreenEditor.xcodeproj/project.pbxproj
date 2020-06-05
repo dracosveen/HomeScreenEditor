@@ -21,6 +21,7 @@
 		14CFA34C246666F9005E278D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14CFA34E246666F9005E278D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14CFA34F246666F9005E278D /* HomeScreenEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeScreenEditor.entitlements; sourceTree = "<group>"; };
+		14CFA35624666735005E278D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 			children = (
 				14CFA344246666F8005E278D /* HomeScreenEditor */,
 				14CFA343246666F8005E278D /* Products */,
+				14CFA35524666734005E278D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +63,14 @@
 				14CFA34F246666F9005E278D /* HomeScreenEditor.entitlements */,
 			);
 			path = HomeScreenEditor;
+			sourceTree = "<group>";
+		};
+		14CFA35524666734005E278D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CFA35624666735005E278D /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +289,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = dracosveen.studios.HomeScreenEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +310,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = dracosveen.studios.HomeScreenEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
